@@ -221,7 +221,7 @@ class CueSheet{
             "SONGWRITER" {$this.ParseGlobalOrTrackProp($line)}
             "PERFORMER" {$this.ParseGlobalOrTrackProp($line)}
             "TITLE" {$this.ParseGlobalOrTrackProp($line)}
-            "COMPOSER" {$this.ParseGlobalProp($line)}
+            "COMPOSER" {$this.ParseGlobaOrTracklProp($line)}
 
 
             Default {throw "Unknown field name $FieldName"}
