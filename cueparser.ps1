@@ -72,12 +72,12 @@ class CueFile{
 
     [CueTrack]GetCurrentTrack(){
         if ($null -eq $this.Tracks){
-            throw "Cannot get current file (not initialized)"
+            throw "Cannot get current track (not initialized)"
         }
 
         $alen = $this.Tracks.Length
         if ($alen -eq 0){
-            throw "Cannot get current file (array length 0)"
+            throw "Cannot get current track (array length 0)"
         }
 
         return $this.Tracks[$alen - 1]
